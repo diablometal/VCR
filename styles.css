@@ -1,37 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico para estilos por defecto */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
-header, nav, main, footer {
-    padding: 20px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #007BFF;
-    color: #ffffff;
+    background: #007bff;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    background: #333;
+    text-align: center;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+main {
+    padding: 20px;
 }
 
 footer {
     background: #333;
     color: #fff;
     text-align: center;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Mejora visual para la sección de navegación */
+nav ul li a:hover, nav ul li a:focus {
+    background: #0056b3;
+    color: #ffffff;
+}
+
+/* Espaciado y padding para contenido principal */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
